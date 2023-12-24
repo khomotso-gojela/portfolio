@@ -18,7 +18,8 @@ import {
     book,
     podcast,
     codespace,
-    selenium
+    selenium,
+    calculator
   } from "../assets";
   
   export const navLinks = [
@@ -122,6 +123,19 @@ import {
   ];
   
   const projects = [
+    {
+      name: "Simple Calculator App",
+      description:
+        "Basic Javascript calculator.",
+      tags: [
+        {
+          name: "ReactJS",
+          color: "blue-text-gradient",
+        }
+      ],
+      image: calculator,
+      source_code_link: "https://calculator-react2.netlify.app/",
+    },
     {
       name: "Book Connect App",
       description:

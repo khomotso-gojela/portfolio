@@ -27,6 +27,7 @@ import codespace from "./company/codespace.png";
 import kitchen from "./kitchen.png";
 import book from "./book.png";
 import podcast from "./podcast.png";
+import calculator from './calculator.png'
 
 export {
   logo,
@@ -54,5 +55,6 @@ export {
   book,
   podcast,
   codespace,
-  selenium
+  selenium,
+  calculator
 };
