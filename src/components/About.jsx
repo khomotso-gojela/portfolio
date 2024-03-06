@@ -45,7 +45,7 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='mt-4 text-[#CADCFC] text-[17px] max-w-3xl leading-[30px]'
       >
         I am a dynamic programmer with proficiency in ReactJS. With a passion for problem-solving and a commitment 
         to delivering high-quality software solutions, I have established a strong 

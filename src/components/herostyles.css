@@ -1,0 +1,9 @@
+.cv-button {
+    border: 2px solid #8AB6F9;
+    border-radius: 1em;
+    background-color: #CADCFC;
+    color: #00246B;
+    font-weight: bold;
+    margin-top: 1.3em;
+    padding: 1em;
+}
