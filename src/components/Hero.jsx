@@ -14,7 +14,10 @@ const Hero = () => {
             
             <p className={`${styles.heroSubText} mt-2 text-[#ffffff]`}> A MERN stack software developer.</p>
             
-            <button className="cv-button">Download resume</button>
+            
+            <a href="https://drive.google.com/file/d/13-omN1k2KMC7tBsnkFcjtacfKFIByX_O/view?usp=drive_link" target="_blank">
+              <button className="cv-button">Download resume</button>
+            </a>
           </div>
 
       </div>

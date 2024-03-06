@@ -51,7 +51,11 @@ import {
       icon: backend,
     },
     {
-      title: "Software testing",
+      title: "Software Testing",
+      icon: creator,
+    },
+    {
+      title: "Data Modelling",
       icon: creator,
     },
   ];

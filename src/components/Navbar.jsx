@@ -24,15 +24,15 @@ const Navbar = () => {
           }}
         >
           {/* <img src={logo} alt="logo" className='w-9 h-9 object-contain' /> */}
-          <p className='text-white text-[18px] font-bold cursor-pointer '>Khomotso Gojela</p>
+          <p className='text-[#8AB6F9] text-[18px] font-bold cursor-pointer '>Khomotso Gojela</p>
         </Link>
 
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((Link) => (
             <li key={Link.id} 
               className={`${
-                active === Link.title? 'text-secondary': 'text-white'
-              } hover:text-secondary text-[18px] font-medium cursor-pointer`}
+                active === Link.title? 'text-[#8AB6F9]': 'text-[#ffffff75]'
+              } hover:text-[#8AB6F9] text-[18px] font-medium cursor-pointer`}
               onClick={()=> setActive(Link.title)}
             >
               <a href={`#${Link.id}`}>{Link.title}</a>
