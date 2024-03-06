@@ -55,7 +55,7 @@ import {
       icon: creator,
     },
     {
-      title: "Data Modelling",
+      title: "Data Modeling",
       icon: creator,
     },
   ];
