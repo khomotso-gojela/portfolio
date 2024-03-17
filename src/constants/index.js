@@ -43,11 +43,11 @@ import {
   
   const services = [
     {
-      title: "Web Developement",
+      title: "Front-end Developement",
       icon: web,
     },
     {
-      title: "Backend Development",
+      title: "Back-end Development",
       icon: backend,
     },
     {
@@ -57,6 +57,10 @@ import {
     {
       title: "Data Modeling",
       icon: creator,
+    },
+    {
+      title: "UI Design",
+      icon: backend,
     },
   ];
   
@@ -188,24 +192,28 @@ import {
         "A comprehensive streaming platform that allows users to listen to their favorite podcasts.",
       tags: [
         {
-          name: "Reactjs",
-          color: "blue-text-gradient",
+          name: "MongoDb",
+          color: "text-green-700",
         },
         {
-          name: "supabase",
+          name: "Express.js",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "React.js",
+          color: "text-blue-600",
+        },
+        {
+          name: "Node.js",
           color: "green-text-gradient",
         },
         {
-          name: "coreui",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "fuse",
-          color: "orange-text-gradient",
+          name: "Tailwind",
+          color: "text-indigo-500",
         },
       ],
       image: podcast,
-      source_code_link: "https://podcast-app49.netlify.app/",
+      source_code_link: "https://shiny-biscotti-65d033.netlify.app/",
     },
   ];
   
