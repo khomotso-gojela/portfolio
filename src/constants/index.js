@@ -19,7 +19,8 @@ import {
     podcast,
     codespace,
     selenium,
-    calculator
+    calculator,
+    back, design, frontend, data,test
   } from "../assets";
   
   export const navLinks = [
@@ -45,22 +46,27 @@ import {
     {
       title: "Front-end Developement",
       icon: web,
+      image: 'frontend'
     },
     {
       title: "Back-end Development",
       icon: backend,
+      image: 'backend'
     },
     {
       title: "Software Testing",
       icon: creator,
+      image: 'test'
     },
     {
       title: "Data Modeling",
       icon: creator,
+      image: 'data'
     },
     {
       title: "UI Design",
       icon: backend,
+      image: 'design'
     },
   ];
   

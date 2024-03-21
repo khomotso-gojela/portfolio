@@ -7,11 +7,12 @@ import { services } from "../constants";
 import SectionWrapper from "../hoc/SectionWrapper";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className='xs:w-[250px] w-full'>
+const ServiceCard = ({ index, title, icon, image }) => (
+  <div className='xs:w-[250px] w-full bg-cover object-center rounded-[20px]' style={{backgroundImage: `url(./src/assets/role/${image}.jpg)`}} >
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
+      // style={{backgroundImage: `url(./src/assets/role/${image}.jpg)`}}
+      className='w-full bg-gray-900 bg-opacity-50 p-[1px] rounded-[20px] shadow-lg shadow-black bg-cover object-center'
     >
       <div
         options={{
@@ -19,32 +20,32 @@ const ServiceCard = ({ index, title, icon }) => (
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
+        className=' rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
       >
-        <img
+        {/* <img
           src={icon}
           alt='web-development'
           className='w-16 h-16 object-contain'
-        />
+        /> */}
 
         <h3 className='text-gray-100 text-[20px] font-bold text-center'>
           {title}
         </h3>
       </div>
     </motion.div>
-  </Tilt>
+  </div>
 );
 
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
-      </motion.div>
+      </div>
 
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
+      <div
+        // variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-gray-600 text-[17px] max-w-3xl leading-[30px]'
       >
         <p>Embarking on a journey sparked by my fascination with the dynamic landscape of technology, I found my passion at the intersection of innovation and creation. 
@@ -69,7 +70,7 @@ const About = () => {
         Driven by a relentless pursuit of excellence and fueled by a boundless passion for innovation, I am eager to continue pushing 
         the boundaries of what is possible in the world of technology, leaving an indelible mark on the digital frontier.
         </p>
-      </motion.p>
+      </div>
 
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (

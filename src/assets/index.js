@@ -29,6 +29,12 @@ import book from "./book.png";
 import podcast from "./podcast.png";
 import calculator from './calculator.png'
 
+import design from "./role/design.jpg"
+import back from "./role/backend.jpg"
+import data from "./role/data.jpg"
+import frontend from "./role/frontend.jpg"
+import test from "./role/test.jpg"
+
 export {
   logo,
   backend,
@@ -56,5 +62,7 @@ export {
   podcast,
   codespace,
   selenium,
-  calculator
+  calculator,
+  back, design, frontend, data,test
+
 };
