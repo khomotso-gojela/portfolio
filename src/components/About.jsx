@@ -8,8 +8,8 @@ import SectionWrapper from "../hoc/SectionWrapper";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ServiceCard = ({ index, title, icon, image }) => (
-  <div className='xs:w-[250px] w-full bg-cover object-center rounded-[20px]' style={{backgroundImage: `url(./src/assets/role/${image}.jpg)`}} >
-    <motion.div
+  <div className='xs:w-[250px] w-full bg-cover object-center rounded-[20px]' style={{backgroundImage: `url(../../src/assets/role/${image}.jpg)`}} >
+    <div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       // style={{backgroundImage: `url(./src/assets/role/${image}.jpg)`}}
       className='w-full bg-gray-900 bg-opacity-50 p-[1px] rounded-[20px] shadow-lg shadow-black bg-cover object-center'
@@ -32,7 +32,7 @@ const ServiceCard = ({ index, title, icon, image }) => (
           {title}
         </h3>
       </div>
-    </motion.div>
+    </div>
   </div>
 );
 
