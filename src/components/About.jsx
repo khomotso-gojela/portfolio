@@ -27,7 +27,7 @@ const ServiceCard = ({ index, title, icon }) => (
           className='w-16 h-16 object-contain'
         />
 
-        <h3 className='text-white text-[20px] font-bold text-center'>
+        <h3 className='text-gray-100 text-[20px] font-bold text-center'>
           {title}
         </h3>
       </div>
@@ -45,7 +45,7 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-[#CADCFC] text-[17px] max-w-3xl leading-[30px]'
+        className='mt-4 text-gray-600 text-[17px] max-w-3xl leading-[30px]'
       >
         <p>Embarking on a journey sparked by my fascination with the dynamic landscape of technology, I found my passion at the intersection of innovation and creation. 
         It all began during my formative years in high school, where the enigmatic world of video game development captivated my imagination. Driven by an 

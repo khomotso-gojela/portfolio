@@ -1,4 +1,4 @@
-import React,{useEffect,useState} from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import { styles } from '../style' 
@@ -10,9 +10,9 @@ const Navbar = () => {
   const [toggle,setToggle] = useState(false)
 
   return (
-    <nav
+    <div
       className={`${styles.paddingX} w-full flex
-      item-center py-5 fixed top-0 z-20 bg-[#000000a4] `}
+      item-center py-5 bg-gray-100  shadow-md `}
     >
       <div className="w-full flex justify-between items-center max-w-7x1 mx-auto ">
         <Link
@@ -23,16 +23,15 @@ const Navbar = () => {
             window.scrollTo(0,0)
           }}
         >
-          {/* <img src={logo} alt="logo" className='w-9 h-9 object-contain' /> */}
-          <p className='text-[#8AB6F9] text-[18px] font-bold cursor-pointer '>Khomotso Gojela</p>
+          <img src={logo} alt="logo" className='w-9 h-9 object-contain' />
         </Link>
 
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        <ul className='list-none hidden sm:flex flex-row gap-10 text-gray-700'>
           {navLinks.map((Link) => (
             <li key={Link.id} 
               className={`${
-                active === Link.title? 'text-[#8AB6F9]': 'text-[#ffffff75]'
-              } hover:text-[#8AB6F9] text-[18px] font-medium cursor-pointer`}
+                active === Link.title? 'text-[#8AB6F9]': 'text-gray-700'
+              } hover:text-[#8AB6F9] text-[18px] cursor-pointer`}
               onClick={()=> setActive(Link.title)}
             >
               <a href={`#${Link.id}`}>{Link.title}</a>
@@ -40,7 +39,7 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div className='sm:hidden flex flex-1 justify-end items-center'>
+        <div className='sm:hidden flex flex-1 justify-end items-center text-gray-700'>
           <img 
             src={toggle? close : menu} 
             alt='menu'
@@ -71,7 +70,7 @@ const Navbar = () => {
         </div>
       </div>
 
-    </nav>
+    </div>
   )
 }
 
