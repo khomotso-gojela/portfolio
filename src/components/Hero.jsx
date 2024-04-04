@@ -16,7 +16,7 @@ const Hero = () => {
             <p className={`${styles.heroSubText} mt-2`}> A MERN stack software developer.</p>
             
             <div className="flex flex-col sm:flex-row items-left justify-start">
-              <a href="https://drive.google.com/file/d/13-omN1k2KMC7tBsnkFcjtacfKFIByX_O/view?usp=drive_link" target="_blank">
+              <a href="#" target="_blank">
                 <button 
                   className="bg-blue-500 text-blue-100 px-8 py-4 my-6 font-bold
                               rounded-md hover:-translate-y-1 transition-all shadow-md shadow-blue-700"
