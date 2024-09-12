@@ -76,11 +76,11 @@ const Works = () => {
         </p>
       </div>
 
-      <div className='mt-20 flex flex-wrap gap-7 lg:grid lg:grid-cols-2 xl:grid-cols-3'>
+      {/* <div className='mt-20 flex flex-wrap gap-7 lg:grid lg:grid-cols-2 xl:grid-cols-3'>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
-      </div>
+      </div> */}
     </>
   );
 };
